@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.moandjiezana.toml</groupId>
   <artifactId>toml4j</artifactId>
-  <version>0.7.3-SNAPSHOT</version>
+  <version>0.7.3-mazdermind</version>
   <name>toml4j</name>
   <description>A parser for TOML</description>
   <url>http://moandjiezana.com/toml/toml4j</url>
@@ -28,10 +28,11 @@
     <url>https://travis-ci.org/mwanji/toml4j</url>
   </ciManagement>
   <distributionManagement>
-    <snapshotRepository>
-      <id>ossrh</id>
-      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-    </snapshotRepository>
+     <repository>
+       <id>github</id>
+       <name>GitHub MaZderMind Apache Maven Packages</name>
+       <url>https://maven.pkg.github.com/MaZderMind/toml4j</url>
+     </repository>
   </distributionManagement>
   <developers>
     <developer>
@@ -93,17 +94,6 @@
         <groupId>org.eluder.coveralls</groupId>
         <artifactId>coveralls-maven-plugin</artifactId>
         <version>4.3.0</version>
-      </plugin>
-      <plugin>
-        <groupId>org.sonatype.plugins</groupId>
-        <artifactId>nexus-staging-maven-plugin</artifactId>
-        <version>1.6.8</version>
-        <extensions>true</extensions>
-        <configuration>
-          <serverId>ossrh</serverId>
-          <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-          <autoReleaseAfterClose>true</autoReleaseAfterClose>
-        </configuration>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>

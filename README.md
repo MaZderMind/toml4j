@@ -1,8 +1,8 @@
 # toml4j
 
-toml4j is a [TOML 0.4.0](https://github.com/toml-lang/toml/blob/master/versions/en/toml-v0.4.0.md) parser for Java.
+!!!!! This is a Fork of @mwanji latest version which fixes an annoying serialization bug.
 
-[![Maven Central](https://img.shields.io/maven-central/v/com.moandjiezana.toml/toml4j.svg)](https://search.maven.org/#search|gav|1|g%3A%22com.moandjiezana.toml%22%20AND%20a%3A%22toml4j%22) [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) [![Build Status](https://travis-ci.org/mwanji/toml4j.svg)](https://travis-ci.org/mwanji/toml4j) [![Coverage Status](https://coveralls.io/repos/mwanji/toml4j/badge.svg)](https://coveralls.io/r/mwanji/toml4j) [![Dependency Status](https://www.versioneye.com/user/projects/558bc2bc653232001e000001/badge.svg?style=flat)](https://www.versioneye.com/user/projects/558bc2bc653232001e000001)
+toml4j is a [TOML 0.4.0](https://github.com/toml-lang/toml/blob/master/versions/en/toml-v0.4.0.md) parser for Java.
 
 For the bleeding-edge version integrating the latest specs, see the [work-in-progress branch](https://github.com/mwanji/toml4j/tree/wip).
 
@@ -14,7 +14,7 @@ Add the following dependency to your POM (or equivalent for other dependency man
 <dependency>
   <groupId>com.moandjiezana.toml</groupId>
   <artifactId>toml4j</artifactId>
-  <version>0.7.2</version>
+  <version>0.7.3-mazdermind</version>
 </dependency>
 ```
 
