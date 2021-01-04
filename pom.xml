@@ -14,9 +14,9 @@
     </license>
   </licenses>
   <scm>
-    <connection>scm:git:git@github.com:mwanji/toml4j.git</connection>
-    <developerConnection>scm:git:git@github.com:mwanji/toml4j.git</developerConnection>
-    <url>https://github.com/mwanji/toml4j</url>
+    <connection>scm:git:git@github.com:MaZderMind/toml4j.git</connection>
+    <developerConnection>scm:git:git@github.com:MaZderMind/toml4j.git</developerConnection>
+    <url>https://github.com/MaZderMind/toml4j</url>
     <tag>HEAD</tag>
   </scm>
   <issueManagement>
@@ -28,17 +28,21 @@
     <url>https://travis-ci.org/mwanji/toml4j</url>
   </ciManagement>
   <distributionManagement>
-     <repository>
-       <id>github</id>
-       <name>GitHub MaZderMind Apache Maven Packages</name>
-       <url>https://maven.pkg.github.com/MaZderMind/toml4j</url>
-     </repository>
+    <repository>
+      <id>ssh-repository</id>
+      <url>scpexe://mazdermind.de/var/www/mazdermind.de/htdocs/mvn</url>
+    </repository>
   </distributionManagement>
   <developers>
     <developer>
       <id>moandji.ezana</id>
       <name>Moandji Ezana</name>
       <email>mwanji@gmail.com</email>
+    </developer>
+    <developer>
+      <id>mazdermind</id>
+      <name>MaZderMind</name>
+      <email>git@mazdermind.de</email>
     </developer>
   </developers>
   <inceptionYear>2013</inceptionYear>
@@ -147,5 +151,12 @@
         </executions>
       </plugin>
     </plugins>
+    <extensions>
+      <extension>
+        <groupId>org.apache.maven.wagon</groupId>
+         <artifactId>wagon-ssh-external</artifactId>
+         <version>1.0-beta-6</version>
+      </extension>
+    </extensions>
   </build>
 </project>

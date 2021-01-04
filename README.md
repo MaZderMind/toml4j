@@ -16,6 +16,20 @@ Add the following dependency to your POM (or equivalent for other dependency man
   <artifactId>toml4j</artifactId>
   <version>0.7.3-mazdermind</version>
 </dependency>
+
+
+<repositories>
+	<repository>
+		<id>central</id>
+		<name>central</name>
+		<url>https://repo1.maven.org/maven2</url>
+	</repository>
+	<repository>
+		<id>mazdermind</id>
+		<name>mazdermind</name>
+		<url>https://mazdermind.de/mvn/</url>
+	</repository>
+</repositories>
 ```
 
 Requires Java 1.6 or above.
